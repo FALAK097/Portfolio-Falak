@@ -1,0 +1,157 @@
+/* Footer styles */
+footer{
+    background: var(--light-blue);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+}
+
+footer a {
+    color: var(--color-bg);
+}
+
+.footer_logo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+.permalinks li {
+    margin: 0.5rem;
+}
+
+.permalinks a {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.footer_socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.footer_socials a {
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+.footer_socials a:hover{
+    background: transparent;
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+
+.footer_socials a:focus {
+    outline: none;
+}
+
+.footer_copyright {
+    margin-bottom: 4rem;
+    color: var(--color-bg);
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .permalinks li {
+        margin: 0.5rem 0;
+    }
+
+    .permalinks a {
+        padding: 0.5rem 1rem;
+    }
+
+    .footer_socials {
+        margin-bottom: 2.6rem;
+    }
+
+    .footer_socials a {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+}
+
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    footer {
+      padding: 2rem 0;
+    }
+  
+    .footer_logo {
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  
+    .permalinks {
+      margin-bottom: 3rem;
+    }
+  
+    .footer_socials {
+      margin-bottom: 4rem;
+    }
+  }
+  
+  /* Small devices (landscape phones) */
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    footer {
+      padding: 3rem 0;
+    }
+  
+    .footer_logo {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .permalinks {
+      margin-bottom: 2.5rem;
+    }
+  
+    .footer_socials {
+      margin-bottom: 3rem;
+    }
+  }
+  
+  /* Extra small devices (portrait phones) */
+  @media only screen and (max-width: 575px) {
+    footer {
+      padding: 2rem 0;
+    }
+  
+    .footer_logo {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .permalinks {
+      margin-bottom: 2rem;
+    }
+  
+    .footer_socials {
+      margin-bottom: 2rem;
+    }
+  
+    .footer_socials a {
+      padding: 0.5rem;
+    }
+  }
+  

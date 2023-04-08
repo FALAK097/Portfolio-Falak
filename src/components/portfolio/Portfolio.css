@@ -1,0 +1,91 @@
+.portfolio_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.portfolio__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio__item{
+  cursor: pointer;
+  color: var(--color-primary-vibrant);
+  padding: 0.25rem 0.75rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.portfolio__item:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+
+.portfolio_item {
+    /* background: var(--color-bg-variant); */
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio_item:hover {
+    border-color: var(--color-primary-vibrant);
+    background: transparent;
+}
+.portfolio_item:hover .portfolio_item-image {
+    filter: blur(5px);
+}
+.portfolio_item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio_item h3 {
+    margin: 1.2rem 0 1rem;
+    opacity: 0;
+}
+.portfolio_item:hover h3{
+    opacity: 1;
+}
+.portfolio-content {
+    position: relative;
+    color: var(--color-white);
+    transition: .5s;
+    opacity: 0;
+}
+
+.portfolio_item:hover .portfolio-content {
+    opacity: 1;
+}
+
+.portfolio_item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+}
+.portfolio_item:hover .portfolio_item-cta{
+    opacity: 1;
+}
+/* Media Query (iPad Pro iPad) */
+@media screen and (max-width: 1024px){
+   .portfolio_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+   }
+}
+
+
+/* Media Query (iPhone XR iPhone 6/7/8 Plus) */
+@media screen and (max-width: 600px){
+    .portfolio_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
