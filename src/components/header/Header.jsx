@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.css'
 import CTA from './CTA'
-// import ME from '../../assets/me.jpeg'
-import Photo from '../../assets/photo.jpg'
+import ME from '../../assets/me.jpeg'
+// import Photo from '../../assets/photo.jpg'
 import HeaderSocials from './HeaderSocials'
 import Typical from 'react-typical'
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div className="me">
-          <img src={Photo} alt="me" />
+          <img src={ME} alt="me" />
         </div>
       </div>
      

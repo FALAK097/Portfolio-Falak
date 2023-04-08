@@ -1,5 +1,5 @@
 import React from "react";
-import "./Experience.css";
+import "./Skills.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { ImHtmlFive } from "react-icons/im";
 import { IoLogoCss3 } from "react-icons/io";

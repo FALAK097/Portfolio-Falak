@@ -106,11 +106,9 @@
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 20px;
-    font-family: "Poppins SemiBold";
 }
 
 .card-detail{
-    font-family: "Poppins Light";
     font-size: 15px;
     font-weight: 200;
 }

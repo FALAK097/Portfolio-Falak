@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -39,54 +38,6 @@
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
-@font-face {
-  font-family: "Poppins Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Poppins SemiBold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins/Poppins-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins ExtraBold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins/Poppins-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Light";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins/Poppins-Light.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Thin";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins/Poppins-Thin.ttf");
-}
 
 @font-face {
   font-family: "Montserrat Bold";
@@ -100,6 +51,34 @@
   font-style: normal;
   font-weight: normal;
   src: url("./assets/fonts/OpenSans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Semi-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/OpenSans/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Playfair/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Semi-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Playfair/PlayfairDisplay-SemiBold.ttf");
 }
 
 html {
@@ -164,10 +143,9 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(../src/assets/bg-texture.png); */
   margin: 0;
   overflow-y: overlay;
-  font-family: "Poppins Regular";
+  font-family: "Playfair Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -179,18 +157,17 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5 {
   font-weight: 500;
-  font-family: "Montserrat Bold";
+  font-family: "Open Sans Regular";
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-family: "Montserrat Bold";
+  font-weight: 200;
+  font-family: "Playfair Semi-Bold";
 }
 
 section {

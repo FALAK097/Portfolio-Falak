@@ -4,6 +4,10 @@
     gap: 15%;
 }
 
+#about{
+    margin-top: 4rem;
+}
+
 .about_me{
     width: 100%;
     aspect-ratio: 1/1;
@@ -19,6 +23,7 @@
 }
 
 .about_me-image{
+    height: 120%;
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
@@ -89,6 +94,10 @@
 
     .about_content p {
         margin: 1rem 0 1.5rem;
+    }
+
+    #about {
+        margin-top: 2rem;
     }
 }
 
