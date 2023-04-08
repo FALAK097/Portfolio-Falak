@@ -12,6 +12,12 @@
     margin-bottom: 2rem;
 }
 
+/* Active Filter Highlight */
+.portfolio__item.active-work {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
 .portfolio__item{
   cursor: pointer;
   color: var(--color-primary-vibrant);

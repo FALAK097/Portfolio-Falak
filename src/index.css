@@ -43,49 +43,63 @@
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Medium.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-family: "Poppins Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Regular.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: "Poppins SemiBold";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Poppins Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Bold.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-family: "Poppins ExtraBold";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: "Poppins Light";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Light.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
 @font-face {
   font-family: "Poppins Thin";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Thin.ttf");
+  src: url("./assets/fonts/Poppins/Poppins-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/OpenSans/OpenSans-Bold.ttf");
 }
 
 html {
@@ -147,7 +161,6 @@ html {
   
 }
 body {
-  font-family: "Poppins", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
@@ -172,11 +185,12 @@ h3,
 h4,
 h5 {
   font-weight: 500;
+  font-family: "Montserrat Bold";
 }
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Poppins Regular";
+  font-family: "Montserrat Bold";
 }
 
 section {
@@ -209,7 +223,7 @@ a:hover {
 
 .btn {
   width: max-content;
-  font-family: "Poppins SemiBold";
+  font-family: "Open Sans Bold";
   display: inline-block;
   color: var(--color-primary);
   /* background: #ff5823; */

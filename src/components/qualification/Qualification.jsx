@@ -55,11 +55,11 @@ const Qualification = () => {
                   B.E in Computer Engineering
                 </h3>
                 <span className="qualification_subtitle">
-                  K.C. College of Engineering - 8.14 Pointer
+                  K.C. College of Engineering - 8.14 CGPA
                 </span>
                 <div className="qualification_calendar">
                   <BsFillCalendarFill className="qualification_icon" />
-                  2022 - Present
+                  January 2022 - Present
                 </div>
               </div>
 
@@ -86,7 +86,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification_calendar">
                   <BsFillCalendarFill className="qualification_icon" />
-                  2018 - 2021
+                  August 2018 - May 2021
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification_calendar">
                   <BsFillCalendarFill className="qualification_icon" />
-                  2006 - 2018
+                  June 2006 - March 2018
                 </div>
               </div>
 
@@ -123,7 +123,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification_calendar">
                   <BsFillCalendarFill className="qualification_icon" />
-                  2023 - Present
+                  January 2023 - Present
                 </div>
               </div>
 
@@ -142,13 +142,13 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification_title">Web Developer</h3>
+                <h3 className="qualification_title">Web & Python Developer</h3>
                 <span className="qualification_subtitle">
                   Sahu Technologies
                 </span>
                 <div className="qualification_calendar">
                   <BsFillCalendarFill className="qualification_icon" />
-                  2022 - 2022
+                  August 2022 - September 2022
                 </div>
               </div>
             </div>
