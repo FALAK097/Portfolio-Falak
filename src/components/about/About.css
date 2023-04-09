@@ -49,6 +49,11 @@
     transition: var(--transition);
 }
 
+.about_card h6{
+    color: var(--color-light);
+    font-weight: 200;
+}
+
 .about_card:hover{
     background: transparent;
     border-color: var(--color-primary-variant);

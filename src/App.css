@@ -1,47 +1,87 @@
-  .dark-theme {
+.dark-theme {
   --color-bg: #333333;
   --color-bg-variant: #2c2c6c;
   --color-primary: #04c3ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
-  }
+}
 
-  .light-theme {
-  --color-bg: #F8F8F8;
-  --color-bg-variant: #111b20;
-  --color-primary: #28A745 ;
-  --color-primary-variant: #777777;
-  --color-white: #1E7E34;
-  } 
-  
-  .light-theme .about_card h5 {
-     color: #999999;
-  }
+.light-theme {
+  --color-bg: #f8f8f8;
+  --color-bg-variant: #2c6cc7;
+  --color-primary: #007d2e;
+  --color-primary-variant: #555555;
+  --color-white: #5cb85c;
+  --color-light: #333;
+}
 
-  .light-theme .about_card small {
-    color: var(--toast-error);
-  }
+.light-theme::-webkit-scrollbar-track {
+  background-color: #999999;
+}
 
-  .light-theme .about_content p {
-    color: #444444;
- }
+.light-theme .about_card h5 {
+  color: #999999;
+}
 
-  .light-theme .experience_details h4 {
-     color: #04c3ff;
-  }
-  
-  .light-theme .experience_details small {
-    color: var(--toast-success);
- }
+.light-theme .about_card h6 {
+  color: #999999;
+  font-weight: bold;
+}
 
- .light-theme .client_name {
-   color: #04c3ff;
- }
+.light-theme .about_content p {
+  color: #444444;
+}
 
- .light-theme .contact_option h4 {
-   color: #04c3ff;
- }
+.light-theme .client_name {
+  color: #04c3ff;
+}
 
- .light-theme .contact_option h5 {
-  color: var(--toast-success);
+.light-theme .portfolio__item.active-work {
+  color: var(--color-light);
+}
+
+.light-theme .experience_details{
+  color: var(--color-light);
+}
+
+.light-theme .experience_container > div h3 {
+  color: var(--color-light);
+}
+
+.light-theme .experience_details h4 {
+  color: #04c3ff;
+}
+
+.light-theme .contact_option a {
+  color: var(--color-white);
+}
+
+.light-theme .contact_option h4 h5 {
+  color: var(--color-primary);
+}
+
+
+.light-theme .contact_option h5 {
+  color: var(--color-bg-variant);
+}
+
+.light-theme .contact_option {
+  color: var(--color-bg-variant);
+  background-color: var(--color-light);
+}
+
+.light-theme .footer_logo{
+  color: var(--color-light);
+}
+
+.light-theme .footer_logo:hover{
+  color: var(--color-bg);
+}
+
+.light-theme .permalinks a{
+  color: var(--color-light);
+}
+
+.light-theme .permalinks a:hover{
+  color: var(--color-bg);
 }

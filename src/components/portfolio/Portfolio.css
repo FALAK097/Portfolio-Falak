@@ -15,7 +15,7 @@
 /* Active Filter Highlight */
 .portfolio__item.active-work {
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-white);
 }
 
 .portfolio__item{
@@ -27,8 +27,8 @@
 }
 
 .portfolio__item:hover {
-    background-color: var(--color-primary);
-    color: #fff;
+    /* background-color: var(--color-primary); */
+    color: var(--color-light);
 }
 
 

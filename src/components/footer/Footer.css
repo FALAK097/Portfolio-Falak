@@ -64,6 +64,8 @@ footer a {
 .footer_copyright {
     margin-bottom: 4rem;
     color: var(--color-bg);
+    /* font-weight: 500; */
+    /* font-size: 24; */
 }
 
 /* Media Queries */

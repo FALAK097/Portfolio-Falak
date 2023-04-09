@@ -11,17 +11,17 @@
 .qualification_button {
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--color-primary);
+  color: var(--sea-green-extra-dark);
   margin: 0 1rem;
   cursor: pointer;
 }
 
 .qualification_button:hover {
-  color: var(--color-primary-vibrant);
+  color: var(--color-light);
 }
 
 .qualification_active {
-  color: var(--sea-green-extra-dark);
+  color: var(--color-primary);
 }
 
 .qualification_sections {
@@ -42,6 +42,7 @@
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 2.5rem;
+  color: var(--color-light);
 }
 
 .qualification_title {
@@ -67,7 +68,7 @@
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: var(--color-white);
+  background-color: var(--color-light);
   border-radius: 50%;
 }
 
@@ -75,7 +76,7 @@
   display: block;
   width: 1px;
   height: 100%;
-  background-color: black;
+  background-color: var(--color-light);
   transform: translate(6px, -7px);
 }
 
