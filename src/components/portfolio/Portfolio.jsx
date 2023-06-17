@@ -14,9 +14,9 @@ const data = [
     title: "Project 01",
     category: "Web App",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, culpa laboriosam soluta Quidem, nihil!",
+      "Coming Soon",
     github: "https://github.com",
-    demo: "https://instagram.com",
+    demo: "",
   },
   {
     id: 2,
@@ -24,9 +24,9 @@ const data = [
     title: "Project 02",
     category: "Web Design",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, culpa laboriosam soluta Quidem, nihil!",
-    github: "https://github.com",
-    demo: "https://instagram.com",
+    "Presenting a responsive multipage website for an educational institute, showcasing courses and built using HTML, SCSS, and JavaScript. Experience seamless navigation and explore the diverse educational opportunities with ease.",
+    github: "https://github.com/FALAK097/Educationwebsite",
+    demo: "https://falak097.github.io/Educationwebsite/",
   },
   {
     id: 3,
@@ -34,9 +34,9 @@ const data = [
     title: "Project 03",
     category: "Web App",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, culpa laboriosam soluta Quidem, nihil!",
+      "Coming Soon",
     github: "https://github.com",
-    demo: "https://instagram.com",
+    demo: "",
   },
   {
     id: 4,
@@ -44,9 +44,9 @@ const data = [
     title: "Project 04",
     category: "Web Design",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, culpa laboriosam soluta Quidem, nihil!",
-    github: "https://github.com",
-    demo: "https://instagram.com",
+      "Experience a responsive educational website featuring a diverse course selection and engaging blog content, meticulously built using HTML and CSS.",
+    github: "https://github.com/FALAK097/EducationalWebsite",
+    demo: "https://falak097.github.io/EducationalWebsite/",
   },
   {
     id: 5,
@@ -54,9 +54,9 @@ const data = [
     title: "Project 05",
     category: "Web Design",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, culpa laboriosam soluta Quidem, nihil!",
+      "Coming Soon",
     github: "https://github.com",
-    demo: "https://instagram.com",
+    demo: "",
   },
   {
     id: 6,
@@ -64,9 +64,9 @@ const data = [
     title: "Project 06",
     category: "Web App",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, culpa laboriosam soluta Quidem, nihil!",
+      "Coming Soon",
     github: "https://github.com",
-    demo: "https://twitter.com",
+    demo: "",
   },
 ];
 
