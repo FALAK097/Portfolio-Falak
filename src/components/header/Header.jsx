@@ -19,7 +19,7 @@ const Header = () => {
           steps={[
             "Frontend Dev",
             1000,
-            "Web Designer",
+            "Web Developer",
             1000,
             "Football Lover",
             1000, 
