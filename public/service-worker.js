@@ -1,6 +1,5 @@
 /* eslint-disable no-restricted-globals */
 import { precacheAndRoute } from 'workbox-precaching';
-import { registerRoute } from 'workbox-routing';
 
 // Precache and route the specified URLs
 precacheAndRoute(self.__WB_MANIFEST);
