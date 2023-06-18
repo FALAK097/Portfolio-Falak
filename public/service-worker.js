@@ -1,7 +1,8 @@
 /* eslint-disable no-restricted-globals */
 import { precacheAndRoute } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
-import { CacheFirst } from 'workbox-strategies';
+import { StaleWhileRevalidate } from 'workbox-strategies';
+import { ExpirationPlugin } from 'workbox-expiration';
 
 // Precache and route the specified URLs
 precacheAndRoute(self.__WB_MANIFEST);
@@ -9,7 +10,7 @@ precacheAndRoute(self.__WB_MANIFEST);
 // Cache the root URL and index.html during installation
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open('my-cache').then((cache) => {
+    caches.open('my-cache-v1').then((cache) => {
       return cache.addAll(['/', '/index.html']);
     })
   );
@@ -23,13 +24,16 @@ registerRoute(
   }
 );
 
-// Cache images using a CacheFirst strategy
+// Cache images using a StaleWhileRevalidate strategy
 registerRoute(
   /\.(?:png|jpg|jpeg|svg|gif)$/,
-  new CacheFirst({
+  new StaleWhileRevalidate({
     cacheName: 'image-cache',
     plugins: [
-      // Optional: Apply cache size limits or expiration
+      new ExpirationPlugin({
+        maxEntries: 50,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+      }),
     ],
   })
 );
