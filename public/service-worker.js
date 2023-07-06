@@ -1,9 +1,13 @@
 /* eslint-disable no-restricted-globals */
-import { precacheAndRoute } from 'workbox-precaching';
-import { registerRoute } from 'workbox-routing';
-import { StaleWhileRevalidate } from 'workbox-strategies';
-import { ExpirationPlugin } from 'workbox-expiration';
-
+// import { precacheAndRoute } from 'workbox-precaching';
+// import { registerRoute } from 'workbox-routing';
+// import { StaleWhileRevalidate } from 'workbox-strategies';
+// import { ExpirationPlugin } from 'workbox-expiration';
+const { precacheAndRoute } = require(’require workbox-precaching’);
+const { registerRoute } = require('require workbox-routing’);
+const { StaleWhileRevalidate } = require('require workbox-strategies’);
+const { ExpirationPlugin } = require('require workbox-expiration’);
+                                 
 // Precache and route the specified URLs
 precacheAndRoute(self.__WB_MANIFEST);
 
