@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import ME from "../../assets/me.jpeg";
 import Photo from "../../assets/photo.jpg"
 import { FaAward } from "react-icons/fa";
 // import { FiUsers } from "react-icons/fi";
@@ -24,7 +23,7 @@ const About = () => {
             <article className="about_card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <h6>0 Years</h6>
+              <h6>7 Months</h6>
             </article>
 
             {/* <article className="about_card">
@@ -41,16 +40,15 @@ const About = () => {
           </div>
 
           <p>
-          Greetings! My name is Falak Gala, and I am on an exciting journey pursuing an undergraduate degree in Computer Engineering T.E. While exploring the vast and dynamic world of technology, I have found myself drawn to the art and science of web development. With a passion for crafting engaging and intuitive user experiences, I am currently honing my skills in building dynamic websites and robust web applications.
-
+            Greetings! My name is Falak Gala, and I am a final year undergraduate student pursuing Computer Engineering. While exploring the vast and dynamic world of technology, I have found myself drawn to the art and science of Web Development. With a passion for crafting engaging and intuitive user experiences, I am currently honing my skills in building dynamic websites and robust web applications.
           </p>
 
           <a href="#contact" className="btn btn-primary">
             Want to know more?
           </a>
         </div>
-      </div>  
-  </section>
+      </div>
+    </section>
   );
 };
 

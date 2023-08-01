@@ -5,7 +5,7 @@ import { FaBriefcase } from "react-icons/fa";
 import { BsFillCalendarFill } from "react-icons/bs";
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(2);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -20,17 +20,6 @@ const Qualification = () => {
         <div className="qualification_tabs">
           <div
             className={
-              toggleState === 1
-                ? "qualification_button qualification_active"
-                : "qualification_button"
-            }
-            onClick={() => toggleTab(1)}
-          >
-            <FaGraduationCap /> Education
-          </div>
-
-          <div
-            className={
               toggleState === 2
                 ? "qualification_button qualification_active"
                 : "qualification_button"
@@ -38,6 +27,19 @@ const Qualification = () => {
             onClick={() => toggleTab(2)}
           >
             <FaBriefcase /> Expierence
+
+          </div>
+
+          <div
+            className={
+              toggleState === 1
+                ? "qualification_button qualification_active"
+                : "qualification_button"
+            }
+            onClick={() => toggleTab(1)}
+          >
+            <FaGraduationCap /> Education
+
           </div>
         </div>
 
@@ -52,7 +54,7 @@ const Qualification = () => {
             <div className="qualification_data">
               <div>
                 <h3 className="qualification_title">
-                  B.E in Computer Engineering
+                  Bachelors in Computer Engineering
                 </h3>
                 <span className="qualification_subtitle">
                   K.C. College of Engineering - 8.14 CGPA
@@ -111,19 +113,19 @@ const Qualification = () => {
           </div>
 
           <div className={
-              toggleState === 2
-                ? "qualification_content qualification_content-active"
-                : "qualification_content"
-            }>
+            toggleState === 2
+              ? "qualification_content qualification_content-active"
+              : "qualification_content"
+          }>
             <div className="qualification_data">
               <div>
-                <h3 className="qualification_title">Tech Intern</h3>
+                <h3 className="qualification_title">Web Developer Intern</h3>
                 <span className="qualification_subtitle">
                   SSINGULARITY TECHNOLOGIES
                 </span>
                 <div className="qualification_calendar">
                   <BsFillCalendarFill className="qualification_icon" />
-                  January 2023 - Present
+                  January 2023 - July 2023
                 </div>
               </div>
 
@@ -142,7 +144,7 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification_title">Web & Python Developer</h3>
+                <h3 className="qualification_title">Web & Python Developer Intern</h3>
                 <span className="qualification_subtitle">
                   Sahu Technologies
                 </span>

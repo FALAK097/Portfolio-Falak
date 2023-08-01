@@ -4,18 +4,21 @@ import { BsPatchCheckFill } from "react-icons/bs";
 import { ImHtmlFive } from "react-icons/im";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript } from "react-icons/si";
-import {BsBootstrapFill} from 'react-icons/bs'
-import {FaSass} from 'react-icons/fa'
+import { BsBootstrapFill } from 'react-icons/bs'
+import { FaSass } from 'react-icons/fa'
 // import {SiTailwindcss} from 'react-icons/si'
-import {FaReact} from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
 // import {FaAngular} from "react-icons/fa";
 // import {RiVuejsFill} from 'react-icons/ri'
-import {SiMongodb} from 'react-icons/si'
-import {SiExpress} from 'react-icons/si'
-import {FaNodeJs} from 'react-icons/fa'
-import {SiMysql} from "react-icons/si";
-import {SiVisualstudiocode} from "react-icons/si"
-import {AiOutlineGithub} from "react-icons/ai"
+import { SiMongodb } from 'react-icons/si'
+import { SiExpress } from 'react-icons/si'
+import { FaNodeJs } from 'react-icons/fa'
+import { SiMysql } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { SiVisualstudiocode } from "react-icons/si"
+import { AiOutlineGithub } from "react-icons/ai"
+import { FaDocker } from "react-icons/fa"
+import { SiKubernetes } from "react-icons/si"
 // import {SiPhp} from 'react-icons/si'
 const Experience = () => {
   return (
@@ -24,7 +27,7 @@ const Experience = () => {
       <h2>Skills</h2>
       <div className="container experience_container">
         <div className="experience_frontend">
-          <h3><BsPatchCheckFill  classname="experience_details-icon" />   Frontend Development</h3>
+          <h3><BsPatchCheckFill classname="experience_details-icon" />   Frontend Development</h3>
 
           <div className="experience_content">
             <article className="experience_details">
@@ -45,10 +48,10 @@ const Experience = () => {
               <SiJavascript classname="experience_details-icon" />
               <div>
                 <h4>JavaScript</h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
-             
+
             {/* <article className="experience_details">
               <SiTailwindcss classname="experience_details-icon" />
               <div>
@@ -83,9 +86,9 @@ const Experience = () => {
         {/* End of Frontend Development */}
 
         <div className="experience_backend">
-          <h3><BsPatchCheckFill  classname="experience_details-icon" /> Backend Development</h3>
+          <h3><BsPatchCheckFill classname="experience_details-icon" /> Backend Development</h3>
           <div className="experience_content">
-            
+
             <article className="experience_details">
               <SiExpress classname="experience_details-icon" />
               <div>
@@ -97,10 +100,10 @@ const Experience = () => {
               <FaNodeJs classname="experience_details-icon" />
               <div>
                 <h4>Node.js</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Basic</small>
               </div>
             </article>
-            
+
             {/* <article className="experience_details">
               <SiPhp classname="experience_details-icon" />
               <div>
@@ -113,9 +116,9 @@ const Experience = () => {
 
         {/* End of Backend Development */}
         <div className="experience_backend">
-          <h3><BsPatchCheckFill  classname="experience_details-icon" /> Database</h3>
+          <h3><BsPatchCheckFill classname="experience_details-icon" /> Database</h3>
           <div className="experience_content">
-        <article className="experience_details">
+            <article className="experience_details">
               <SiMongodb classname="experience_details-icon" />
               <div>
                 <h4>MongoDB</h4>
@@ -124,19 +127,19 @@ const Experience = () => {
             </article>
 
             <article className="experience_details">
-              <SiMysql classname="experience_details-icon" />
+              <GrMysql classname="experience_details-icon" />
               <div>
                 <h4>MySQL</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            </div>
-            </div>
+          </div>
+        </div>
 
-            <div className="experience_backend">
-          <h3><BsPatchCheckFill  classname="experience_details-icon" /> Tools</h3>
+        <div className="experience_backend">
+          <h3><BsPatchCheckFill classname="experience_details-icon" /> Tools</h3>
           <div className="experience_content">
-        <article className="experience_details">
+            <article className="experience_details">
               <AiOutlineGithub classname="experience_details-icon" />
               <div>
                 <h4>GitHub</h4>
@@ -166,8 +169,24 @@ const Experience = () => {
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            </div>
-            </div>
+
+            <article className="experience_details">
+              <FaDocker classname="experience_details-icon" />
+              <div>
+                <h4>Docker</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <SiKubernetes classname="experience_details-icon" />
+              <div>
+                <h4>Kubernetes</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
   );

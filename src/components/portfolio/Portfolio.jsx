@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Portfolio.css";
-import IMG1 from "../../assets/project-1.png";
-import IMG2 from "../../assets/project-2.png";
+import IMG1 from "../../assets/P3.png";
+import IMG2 from "../../assets/P1.png";
 import IMG3 from "../../assets/project-3.png";
-import IMG4 from "../../assets/project-4.png";
+import IMG4 from "../../assets/P2.png";
 import IMG5 from "../../assets/project-5.jpg";
 import IMG6 from "../../assets/project-6.jpg";
 
@@ -11,20 +11,20 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Project 01",
+    title: "Luscious - Food Recipe PWA",
     category: "Web App",
     content:
-      "Coming Soon",
-    github: "https://github.com",
-    demo: "",
+      "Created a Food Recipe Progressive Web App (PWA) using Spoonacular API, React, React Router, and Framer Motion. Implemented features for recipe search, browsing, and detailed information, providing users with a seamless and interactive experience.",
+    github: "https://github.com/FALAK097/Luscious",
+    demo: "https://luscious-six.vercel.app/",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Project 02",
+    title: "Education Website",
     category: "Web Design",
     content:
-    "Presenting a responsive multipage website for an educational institute, showcasing courses and built using HTML, SCSS, and JavaScript. Experience seamless navigation and explore the diverse educational opportunities with ease.",
+      "Presenting a responsive multipage website for an educational institute, showcasing courses and built using HTML, SCSS, and JavaScript. Experience seamless navigation and explore the diverse educational opportunities with ease.",
     github: "https://github.com/FALAK097/Educationwebsite",
     demo: "https://falak097.github.io/Educationwebsite/",
   },
@@ -41,7 +41,7 @@ const data = [
   {
     id: 4,
     image: IMG4,
-    title: "Project 04",
+    title: "Educational Website",
     category: "Web Design",
     content:
       "Experience a responsive educational website featuring a diverse course selection and engaging blog content, meticulously built using HTML and CSS.",
@@ -103,9 +103,8 @@ const Portfolio = () => {
               onClick={(e) => {
                 handleClick(e, index);
               }}
-              className={`${
-                active === index ? "active-work" : ""
-              } portfolio__item`}
+              className={`${active === index ? "active-work" : ""
+                } portfolio__item`}
               key={index}
             >
               {item.name}
@@ -130,7 +129,7 @@ const Portfolio = () => {
                   className="btn"
                   target="_blank"
                 >
-                  Github
+                  GitHub
                 </a>
                 <a
                   rel="noreferrer"
@@ -151,13 +150,13 @@ const Portfolio = () => {
 
 export const projectsNav = [
   {
-    name : "All",
+    name: "All",
   },
   {
-    name : "Web App",
+    name: "Web App",
   },
   {
-    name : "Web Design",
+    name: "Web Design",
   },
 ];
 
