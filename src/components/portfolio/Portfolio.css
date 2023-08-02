@@ -61,14 +61,21 @@
 @media screen and (max-width: 1024px) {
   .portfolio_container {
     grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+    gap: 1rem;
   }
 }
 
 /* Media Query (iPhone XR iPhone 6/7/8 Plus) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .portfolio_container {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .portfolio_item-cta {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
   }
 }

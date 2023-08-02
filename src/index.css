@@ -40,45 +40,45 @@
 }
 
 @font-face {
-  font-family: "Montserrat Bold";
+  font-family: 'Montserrat Bold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Montserrat/Montserrat-Bold.ttf");
+  src: url('./assets/fonts/Montserrat/Montserrat-Bold.ttf');
 }
 
 @font-face {
-  font-family: "Open Sans Bold";
+  font-family: 'Open Sans Bold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/OpenSans/OpenSans-Bold.ttf");
+  src: url('./assets/fonts/OpenSans/OpenSans-Bold.ttf');
 }
 
 @font-face {
-  font-family: "Open Sans Semi-Bold";
+  font-family: 'Open Sans Semi-Bold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/OpenSans/OpenSans-SemiBold.ttf");
+  src: url('./assets/fonts/OpenSans/OpenSans-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: "Open Sans Regular";
+  font-family: 'Open Sans Regular';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf");
+  src: url('./assets/fonts/OpenSans/OpenSans-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Playfair Regular";
+  font-family: 'Playfair Regular';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Playfair/PlayfairDisplay-Regular.ttf");
+  src: url('./assets/fonts/Playfair/PlayfairDisplay-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Playfair Semi-Bold";
+  font-family: 'Playfair Semi-Bold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Playfair/PlayfairDisplay-SemiBold.ttf");
+  src: url('./assets/fonts/Playfair/PlayfairDisplay-SemiBold.ttf');
 }
 
 html {
@@ -125,7 +125,7 @@ html {
 /* Set thumb color and appearance */
 *::-ms-thumb {
   background-color: var(--sea-green-dark);
-  height:20vh;
+  height: 20vh;
 }
 /* Set track color */
 *::-ms-track {
@@ -135,9 +135,8 @@ html {
 @supports (scrollbar-color: var(--light-blue)) {
   * {
     scrollbar-color: var(--sea-green-dark) var(--color-white);
-    scrollbar-width:auto;
+    scrollbar-width: auto;
   }
-  
 }
 body {
   background: var(--color-bg);
@@ -145,7 +144,7 @@ body {
   line-height: 1.7;
   margin: 0;
   overflow-y: overlay;
-  font-family: "Playfair Regular";
+  font-family: 'Playfair Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -162,12 +161,12 @@ h3,
 h4,
 h5 {
   font-weight: 500;
-  font-family: "Open Sans Regular";
+  font-family: 'Open Sans Regular';
 }
 
 h1 {
   font-weight: 200;
-  font-family: "Playfair Semi-Bold";
+  font-family: 'Playfair Semi-Bold';
 }
 
 section {
@@ -200,7 +199,7 @@ a:hover {
 
 .btn {
   width: max-content;
-  font-family: "Open Sans Bold";
+  font-family: 'Open Sans Bold';
   display: inline-block;
   color: var(--color-primary);
   /* background: #ff5823; */
@@ -236,7 +235,7 @@ img {
 /* Media Query (Medium Devices) */
 @media screen and (max-width: 1024px) {
   .container {
-    width: var(--container-width-md);
+    width: var(--container-width-sm);
   }
 
   section {
