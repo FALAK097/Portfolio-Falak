@@ -4,7 +4,7 @@ import IMG1 from '../../assets/P3.png';
 import IMG2 from '../../assets/P1.png';
 import IMG3 from '../../assets/project-3.png';
 import IMG4 from '../../assets/P2.png';
-import IMG5 from '../../assets/project-5.jpg';
+import IMG5 from '../../assets/p5.png';
 import IMG6 from '../../assets/project-6.jpg';
 
 const data = [
