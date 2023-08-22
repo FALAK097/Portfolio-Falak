@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
-import IMG1 from '../../assets/P3.png';
-import IMG2 from '../../assets/P1.png';
-import IMG3 from '../../assets/project-3.png';
-import IMG4 from '../../assets/P2.png';
-import IMG5 from '../../assets/p5.png';
-import IMG6 from '../../assets/project-6.jpg';
+import IMG1 from '../../assets/foodrecipe.png';
+import IMG2 from '../../assets/edu1.png';
+import IMG3 from '../../assets/spotify.PNG';
+import IMG4 from '../../assets/edu2.png';
+import IMG5 from '../../assets/wildheart.png';
+import IMG6 from '../../assets/Nike.PNG';
 
 const data = [
   {
     id: 1,
+    image: IMG3,
+    title: 'Spotify Clone',
+    category: 'Web App',
+    content:
+      'Developed a Spotify Clone, a full-stack music streaming application, using Next.js, React, Tailwind CSS, Supabase, PostgreSQL, and Stripe. The project includes features such as user authentication, song playback, favorites, playlists, and integration with Stripe for premium subscriptions, providing users with a Spotify-like experience.',
+    github: 'https://github.com/FALAK097/spotify_clone',
+    demo: 'https://spotify-clone-falak097.vercel.app/',
+  },
+  {
+    id: 2,
     image: IMG1,
     title: 'Luscious - Food Recipe PWA',
     category: 'Web App',
@@ -19,36 +29,17 @@ const data = [
     demo: 'https://luscious-falak097.vercel.app/',
   },
   {
-    id: 2,
-    image: IMG2,
-    title: 'Education Website',
+    id: 3,
+    image: IMG6,
+    title: 'Nike Landing Page',
     category: 'Web Design',
     content:
-      'Presenting a responsive multipage website for an educational institute, showcasing courses and built using HTML, SCSS, and JavaScript. Experience seamless navigation and explore the diverse educational opportunities with ease.',
-    github: 'https://github.com/FALAK097/Educationwebsite',
-    demo: 'https://falak097.github.io/Educationwebsite/',
-  },
-  {
-    id: 3,
-    image: IMG3,
-    title: 'Project 03',
-    category: 'Web App',
-    content: 'Coming Soon',
-    github: 'https://github.com',
-    demo: '',
+      'Designed and developed a responsive Nike landing page using React, Vite, and Tailwind CSS, showcasing products, services, special offers, and a subscription section. Built with a focus on seamless user interaction and visual appeal.',
+    github: 'https://github.com/FALAK097/Nike',
+    demo: 'https://nike-falak097.vercel.app/',
   },
   {
     id: 4,
-    image: IMG4,
-    title: 'Educational Website',
-    category: 'Web Design',
-    content:
-      'Experience a responsive educational website featuring a diverse course selection and engaging blog content, meticulously built using HTML and CSS.',
-    github: 'https://github.com/FALAK097/EducationalWebsite',
-    demo: 'https://falak097.github.io/EducationalWebsite/',
-  },
-  {
-    id: 5,
     image: IMG5,
     title: 'Wild Heart',
     category: 'Web Design',
@@ -58,13 +49,24 @@ const data = [
     demo: 'https://falak097.github.io/WildHeart/',
   },
   {
+    id: 5,
+    image: IMG2,
+    title: 'Education Website',
+    category: 'Web Design',
+    content:
+      'Presenting a responsive multipage website for an educational institute, showcasing courses and built using HTML, SCSS, and JavaScript. Experience seamless navigation and explore the diverse educational opportunities with ease.',
+    github: 'https://github.com/FALAK097/Educationwebsite',
+    demo: 'https://falak097.github.io/Educationwebsite/',
+  },
+  {
     id: 6,
-    image: IMG6,
-    title: 'Project 06',
-    category: 'Web App',
-    content: 'Coming Soon',
-    github: 'https://github.com',
-    demo: '',
+    image: IMG4,
+    title: 'Educational Website',
+    category: 'Web Design',
+    content:
+      'Experience a responsive educational website featuring a diverse course selection and engaging blog content, meticulously built using HTML and CSS.',
+    github: 'https://github.com/FALAK097/EducationalWebsite',
+    demo: 'https://falak097.github.io/EducationalWebsite/',
   },
 ];
 
