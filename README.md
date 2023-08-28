@@ -17,5 +17,4 @@ This is my personal portfolio website, showcasing my projects and skills as a we
 ## Technologies Used
 
 - **Frontend:** HTML5, CSS3, JavaScript, React
-- **Styling:** CSS Modules
 - **Version Control:** Git, GitHub
