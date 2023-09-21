@@ -6,10 +6,21 @@ import IMG3 from '../../assets/spotify.PNG';
 import IMG4 from '../../assets/edu2.png';
 import IMG5 from '../../assets/wildheart.png';
 import IMG6 from '../../assets/Nike.PNG';
+import IMG7 from '../../assets/airbnb.png';
+import IMG8 from '../../assets/blog.png';
 
 const data = [
   {
     id: 1,
+    image: IMG7,
+    title: 'Airbn Clone',
+    category: 'Web App',
+    content:
+      'Developed an Airbnb Clone using the MERN stack, showcasing my full-stack development skills. This project replicates Airbnb core functionalities, allowing users to explore listings, register, log in, and make reservations. While I am unable to deploy it currently, you can view the projects 11 screenshots on my GitHub, providing a comprehensive overview of its user experience and design.',
+    github: 'https://github.com/FALAK097/Airbnb-clone',
+  },
+  {
+    id: 2,
     image: IMG3,
     title: 'Spotify Clone',
     category: 'Web App',
@@ -19,7 +30,16 @@ const data = [
     demo: 'https://spotify-clone-falak097.vercel.app/',
   },
   {
-    id: 2,
+    id: 3,
+    image: IMG8,
+    title: 'Blog Nest',
+    category: 'Web App',
+    content:
+      'BLOG NEST, a full-stack web application using the MERN stack. BLOG NEST enables users to publish articles, register, log in, and interact with posts. Although I could not host it live at the moment, you can explore the projects code and see its functionality on my GitHub repository. Check out the projects repository for a deeper look into its features and design.',
+    github: 'https://github.com/FALAK097/Blog-Nest',
+  },
+  {
+    id: 4,
     image: IMG1,
     title: 'Luscious - Food Recipe PWA',
     category: 'Web App',
@@ -29,7 +49,7 @@ const data = [
     demo: 'https://luscious-falak097.vercel.app/',
   },
   {
-    id: 3,
+    id: 5,
     image: IMG6,
     title: 'Nike Landing Page',
     category: 'Web Design',
@@ -39,7 +59,7 @@ const data = [
     demo: 'https://nike-falak097.vercel.app/',
   },
   {
-    id: 4,
+    id: 6,
     image: IMG5,
     title: 'Wild Heart',
     category: 'Web Design',
@@ -49,7 +69,7 @@ const data = [
     demo: 'https://falak097.github.io/WildHeart/',
   },
   {
-    id: 5,
+    id: 7,
     image: IMG2,
     title: 'Education Website',
     category: 'Web Design',
@@ -59,7 +79,7 @@ const data = [
     demo: 'https://falak097.github.io/Educationwebsite/',
   },
   {
-    id: 6,
+    id: 8,
     image: IMG4,
     title: 'Educational Website',
     category: 'Web Design',
@@ -130,13 +150,15 @@ const Portfolio = () => {
                   target="_blank">
                   GitHub
                 </a>
-                <a
-                  rel="noreferrer"
-                  href={demo}
-                  className="btn btn-primary"
-                  target="_blank">
-                  Live Demo
-                </a>
+                {demo && (
+                  <a
+                    rel="noreferrer"
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank">
+                    Live Demo
+                  </a>
+                )}
               </div>
             </article>
           );
