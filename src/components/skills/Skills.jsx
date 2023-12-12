@@ -4,7 +4,8 @@ import { BsPatchCheckFill, BsBootstrapFill } from 'react-icons/bs';
 import { ImHtmlFive } from 'react-icons/im';
 import { IoLogoCss3 } from 'react-icons/io';
 import { GrMysql } from 'react-icons/gr';
-import { AiOutlineGithub } from 'react-icons/ai';
+import { AiOutlineGithub, AiOutlineThunderbolt } from 'react-icons/ai';
+import { TbApi, TbBrandNextjs } from 'react-icons/tb';
 import { FaSass, FaNodeJs, FaReact, FaDocker } from 'react-icons/fa';
 import {
   SiJavascript,
@@ -13,6 +14,10 @@ import {
   SiMongodb,
   SiVisualstudiocode,
   SiKubernetes,
+  SiRedux,
+  SiPostman,
+  SiTypescript,
+  // SiGraphql,
 } from 'react-icons/si';
 
 const Experience = () => {
@@ -30,52 +35,39 @@ const Experience = () => {
           <div className="experience_content">
             <article className="experience_details">
               <ImHtmlFive classname="experience_details-icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Advanced</small>
-              </div>
+              <h4>HTML</h4>
             </article>
             <article className="experience_details">
               <IoLogoCss3 classname="experience_details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+              <h4>CSS</h4>
             </article>
             <article className="experience_details">
               <SiJavascript classname="experience_details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+              <h4>JavaScript</h4>
             </article>
             <article className="experience_details">
               <FaReact classname="experience_details-icon" />
-              <div>
-                <h4>React</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>React</h4>
+            </article>
+            <article className="experience_details">
+              <TbBrandNextjs classname="experience_details-icon" />
+              <h4>Next.js</h4>
+            </article>
+            <article className="experience_details">
+              <SiTypescript classname="experience_details-icon" />
+              <h4>Typescript</h4>
             </article>
             <article className="experience_details">
               <SiTailwindcss classname="experience_details-icon" />
-              <div>
-                <h4>Tailwind</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>Tailwind</h4>
             </article>
             <article className="experience_details">
               <BsBootstrapFill classname="experience_details-icon" />
-              <div>
-                <h4>Bootstrap</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+              <h4>Bootstrap</h4>
             </article>
             <article className="experience_details">
               <FaSass classname="experience_details-icon" />
-              <div>
-                <h4>SASS</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+              <h4>SASS</h4>
             </article>
           </div>
         </div>
@@ -85,54 +77,41 @@ const Experience = () => {
         <div className="experience_backend">
           <h3>
             <BsPatchCheckFill classname="experience_details-icon" /> Backend
-            Development
+            Development & API Integration
           </h3>
           <div className="experience_content">
-            <article className="experience_details">
-              <SiExpress classname="experience_details-icon" />
-              <div>
-                <h4>Express.js</h4>
-                <small className="text-light">Basic</small>
-              </div>
-            </article>
             <article className="experience_details">
               <FaNodeJs classname="experience_details-icon" />
-              <div>
-                <h4>Node.js</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>Node.js</h4>
+            </article>
+            <article className="experience_details">
+              <SiExpress classname="experience_details-icon" />
+              <h4>Express.js</h4>
             </article>
 
-            {/* <article className="experience_details">
-              <SiPhp classname="experience_details-icon" />
-              <div>
-                <h4>PHP</h4>
-                <small className="text-light">Basic</small>
-              </div>
-            </article> */}
-          </div>
-        </div>
-
-        {/* End of Backend Development */}
-        <div className="experience_backend">
-          <h3>
-            <BsPatchCheckFill classname="experience_details-icon" /> Database
-          </h3>
-          <div className="experience_content">
             <article className="experience_details">
               <SiMongodb classname="experience_details-icon" />
-              <div>
-                <h4>MongoDB</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+              <h4>MongoDB</h4>
             </article>
 
             <article className="experience_details">
               <GrMysql classname="experience_details-icon" />
-              <div>
-                <h4>MySQL</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+              <h4>MySQL</h4>
+            </article>
+
+            <article className="experience_details">
+              <SiPostman classname="experience_details-icon" />
+              <h4>Postman</h4>
+            </article>
+
+            {/* <article className="experience_details">
+              <SiGraphql classname="experience_details-icon" />
+              <h4>GraphQL</h4>
+            </article> */}
+
+            <article className="experience_details">
+              <TbApi classname="experience_details-icon" />
+              <h4>RESTful APIs</h4>
             </article>
           </div>
         </div>
@@ -144,34 +123,32 @@ const Experience = () => {
           <div className="experience_content">
             <article className="experience_details">
               <AiOutlineGithub classname="experience_details-icon" />
-              <div>
-                <h4>GitHub</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+              <h4>Git/GitHub</h4>
             </article>
 
             <article className="experience_details">
               <SiVisualstudiocode classname="experience_details-icon" />
-              <div>
-                <h4>VS Code</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+              <h4>VS Code</h4>
+            </article>
+
+            <article className="experience_details">
+              <SiRedux classname="experience_details-icon" />
+              <h4>Redux Dev Tools</h4>
+            </article>
+
+            <article className="experience_details">
+              <AiOutlineThunderbolt classname="experience_details-icon" />
+              <h4>Thunder Client</h4>
             </article>
 
             <article className="experience_details">
               <FaDocker classname="experience_details-icon" />
-              <div>
-                <h4>Docker</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>Docker</h4>
             </article>
 
             <article className="experience_details">
               <SiKubernetes classname="experience_details-icon" />
-              <div>
-                <h4>Kubernetes</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>Kubernetes</h4>
             </article>
           </div>
         </div>

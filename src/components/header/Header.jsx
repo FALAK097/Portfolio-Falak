@@ -16,13 +16,17 @@ const Header = () => {
           <Typical
             loop={Infinity}
             steps={[
-              'Frontend Dev',
+              'Frontend Developer',
               1000,
               'React Developer',
               1000,
               'Web Developer',
               1000,
-              'Open for exciting opportunities',
+              'Backend Developer',
+              1000,
+              'FullStack Developer',
+              1000,
+              'Open for Exciting Opportunities',
               1000,
               'Football Lover ',
               1000,
@@ -30,7 +34,8 @@ const Header = () => {
           />
         </h5>
         <span className="header-role">
-          Knack of building web applications with front and back end operations.
+          Designing Robust Software: From Concept to Production-Ready
+          Applications
         </span>
         <CTA />
         <HeaderSocials />

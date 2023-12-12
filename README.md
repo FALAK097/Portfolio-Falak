@@ -1,8 +1,6 @@
 # My Portfolio Website
 
-Live Demo Link
-
-[Portfolio](https://portfolio-falak.vercel.app/)
+[Live Demo](https://portfolio-falak.vercel.app/)
 
 This is my personal portfolio website, showcasing my projects and skills as a web developer. It serves as an online resume and a platform to demonstrate my work to potential employers and collaborators.
 
