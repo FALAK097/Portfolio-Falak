@@ -12,15 +12,6 @@ import IMG8 from '../../assets/blog.png';
 const data = [
   {
     id: 1,
-    image: IMG7,
-    title: 'Airbn Clone',
-    category: 'Web App',
-    content:
-      'Developed an Airbnb Clone using the MERN stack, showcasing my full-stack development skills. This project replicates Airbnb core functionalities, allowing users to explore listings, register, log in, and make reservations. While I am unable to deploy it currently, you can view the projects 11 screenshots on my GitHub, providing a comprehensive overview of its user experience and design.',
-    github: 'https://github.com/FALAK097/Airbnb-clone',
-  },
-  {
-    id: 2,
     image: IMG3,
     title: 'Spotify Clone',
     category: 'Web App',
@@ -30,12 +21,21 @@ const data = [
     demo: 'https://spotify-clone-falak097.vercel.app/',
   },
   {
+    id: 2,
+    image: IMG7,
+    title: 'Airbnb Clone',
+    category: 'Web App',
+    content:
+      "Welcome to my Airbnb Clone project, a showcase of my MERN stack expertise. This full-stack application mirrors Airbnb's core functionalities, offering users seamless registration, accommodation exploration, and booking confirmations. Leveraging React.js, Node.js, MongoDB, and a suite of tools, this project highlights my proficiency in developing immersive and functional web applications.",
+    github: 'https://github.com/FALAK097/Airbnb-clone',
+  },
+  {
     id: 3,
     image: IMG8,
     title: 'Blog Nest',
     category: 'Web App',
     content:
-      'BLOG NEST, a full-stack web application using the MERN stack. BLOG NEST enables users to publish articles, register, log in, and interact with posts. Although I could not host it live at the moment, you can explore the projects code and see its functionality on my GitHub repository. Check out the projects repository for a deeper look into its features and design.',
+      'Blog Nest is a robust MERN stack web application designed for content creators. This full-stack platform facilitates article creation, editing, and publishing. With secure JWT-based authentication, Quill.js for rich text editing, and PWA capabilities, Blog Nest provides a seamless user experience. The tech stack includes React, Express.js, MongoDB, and more, demonstrating proficiency in modern web development.',
     github: 'https://github.com/FALAK097/Blog-Nest',
   },
   {
@@ -64,7 +64,7 @@ const data = [
     title: 'Wild Heart',
     category: 'Web Design',
     content:
-      'WildHeart - A Website for Animal Charity is a website dedicated to promoting animal welfare and conservation efforts. The website provides information about various animal species, their habitats, and the importance of preserving biodiversity.',
+      'WildHeart - A Website for Animal Charity built using HTML, CSS is a website dedicated to promoting animal welfare and conservation efforts. The website provides information about various animal species, their habitats, and the importance of preserving biodiversity.',
     github: 'https://github.com/FALAK097/WildHeart',
     demo: 'https://falak097.github.io/WildHeart/',
   },
@@ -173,10 +173,10 @@ export const projectsNav = [
     name: 'All',
   },
   {
-    name: 'Web App',
+    name: 'Web Design',
   },
   {
-    name: 'Web Design',
+    name: 'Web App',
   },
 ];
 
