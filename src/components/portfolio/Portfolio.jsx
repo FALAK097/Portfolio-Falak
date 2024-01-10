@@ -76,17 +76,7 @@ const data = [
       'Presenting a responsive multipage website for an educational institute, showcasing courses and built using HTML, SCSS, and JavaScript. Experience seamless navigation and explore the diverse educational opportunities with ease.',
     github: 'https://github.com/FALAK097/Educationwebsite',
     demo: 'https://falak097.github.io/Educationwebsite/',
-  },
-  {/*{
-    id: 8,
-    image: IMG4,
-    title: 'Educational Website',
-    category: 'Web Design',
-    content:
-      'Experience a responsive educational website featuring a diverse course selection and engaging blog content, meticulously built using HTML and CSS.',
-    github: 'https://github.com/FALAK097/EducationalWebsite',
-    demo: 'https://falak097.github.io/EducationalWebsite/',
-  },*/}
+  },
 ];
 
 const Portfolio = () => {
