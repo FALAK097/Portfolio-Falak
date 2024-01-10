@@ -141,7 +141,7 @@ const Experience = () => {
               <h4>Thunder Client</h4>
             </article>
 
-            <article className="experience_details">
+            {/*<article className="experience_details">
               <FaDocker classname="experience_details-icon" />
               <h4>Docker</h4>
             </article>
@@ -149,7 +149,7 @@ const Experience = () => {
             <article className="experience_details">
               <SiKubernetes classname="experience_details-icon" />
               <h4>Kubernetes</h4>
-            </article>
+            </article>*/}
           </div>
         </div>
       </div>
