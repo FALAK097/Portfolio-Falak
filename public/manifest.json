@@ -1,10 +1,10 @@
 {
-  "name": "Falak Gala",
-  "short_name": "FG097",
+  "name": "Falak's Portfolio",
+  "short_name": "Falak",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#333",
-  "background_color": "#666",
+  "background_color": "#fff",
   "icons": [
     {
       "src": "profile.png",
