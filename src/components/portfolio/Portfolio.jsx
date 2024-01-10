@@ -7,7 +7,7 @@ import IMG4 from '../../assets/edu2.png';
 import IMG5 from '../../assets/wildheart.png';
 import IMG6 from '../../assets/Nike.PNG';
 import IMG7 from '../../assets/airbnb.png';
-import IMG8 from '../../assets/blog.png';
+{/*import IMG8 from '../../assets/blog.png';*/}
 
 const data = [
   {
