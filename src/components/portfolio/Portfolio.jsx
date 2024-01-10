@@ -78,7 +78,7 @@ const data = [
     github: 'https://github.com/FALAK097/Educationwebsite',
     demo: 'https://falak097.github.io/Educationwebsite/',
   },
-  {
+  {/*{
     id: 8,
     image: IMG4,
     title: 'Educational Website',
@@ -87,7 +87,7 @@ const data = [
       'Experience a responsive educational website featuring a diverse course selection and engaging blog content, meticulously built using HTML and CSS.',
     github: 'https://github.com/FALAK097/EducationalWebsite',
     demo: 'https://falak097.github.io/EducationalWebsite/',
-  },
+  },*/}
 ];
 
 const Portfolio = () => {
