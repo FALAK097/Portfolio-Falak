@@ -1,12 +1,11 @@
 .toggle {
   --width: 50px;
-  --height: calc(var(--width) / 2);
-  --border-radius: calc(var(--height) / 2);
-
+  --height: 24px;
+  --border-radius: 12px;
   display: inline-block;
   position: fixed;
   cursor: pointer;
-  right: 1;
+  right: 1rem;
   top: 2rem;
   transition: transform 0.4s, opacity 0.2s;
 }
@@ -15,66 +14,51 @@
   display: none;
 }
 
-.toggle__fill {
+.toggle__button {
   position: relative;
   width: var(--width);
   height: var(--height);
+  /* background-color: #666; */
   border-radius: var(--border-radius);
-  background: #fff;
-  transition: background 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 
-.toggle__input:checked ~ .toggle__fill {
-  background: #333;
+.sun-icon,
+.moon-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #fff;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
 }
 
-.toggle__fill::after {
-  content: "";
+.toggle__input:checked ~ .toggle__button .sun-icon {
+  transform: translateY(-10%);
+}
+
+.toggle__input:checked ~ .toggle__button .moon-icon {
+  transform: translateY(20%);
+}
+
+.toggle__fill {
   position: absolute;
   top: 0;
   left: 0;
-  height: var(--height);
   width: var(--height);
-  background: #717171;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  border-radius: var(--border-radius);
+  height: var(--height);
+  background: #fff;
+  border-radius: 50%;
   transition: transform 0.2s;
 }
 
-.toggle__input:checked ~ .toggle__fill::after {
-  transform: translateX(var(--height));
+.toggle__input:checked ~ .toggle__fill {
+  transform: translateX(calc(var(--width) - var(--height)));
 }
 
 .toggle--hidden {
   transform: translateY(-100%);
   opacity: 0;
-}
-
-
-
-/* Small screens */
-@media only screen and (max-width: 768px) {
-  .toggle {
-    margin-left: 10px;
-    /* top: 50%; */
-    transform: translateY(-50%);
-  }
-  .toggle__fill {
-    margin-left: 0px;
-  }
-}
-
-/* Medium screens */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .toggle {
-    margin-left: 20px;
-  }
-}
-
-/* Large screens */
-@media only screen and (min-width: 1025px) {
-  .toggle {
-    margin-left: 33cm;
-    top: 2rem;
-  }
 }

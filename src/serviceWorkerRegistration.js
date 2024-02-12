@@ -1,4 +1,3 @@
-// serviceWorkerRegistration.js
 export function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {

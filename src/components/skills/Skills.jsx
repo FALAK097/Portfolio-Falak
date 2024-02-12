@@ -28,45 +28,45 @@ const Experience = () => {
       <div className="container experience_container">
         <div className="experience_frontend">
           <h3>
-            <BsPatchCheckFill classname="experience_details-icon" /> Frontend
+            <BsPatchCheckFill className="experience_details-icon" /> Frontend
             Development
           </h3>
 
           <div className="experience_content">
             <article className="experience_details">
-              <ImHtmlFive classname="experience_details-icon" />
+              <ImHtmlFive className="experience_details-icon" />
               <h4>HTML</h4>
             </article>
             <article className="experience_details">
-              <IoLogoCss3 classname="experience_details-icon" />
+              <IoLogoCss3 className="experience_details-icon" />
               <h4>CSS</h4>
             </article>
             <article className="experience_details">
-              <SiJavascript classname="experience_details-icon" />
+              <SiJavascript className="experience_details-icon" />
               <h4>JavaScript</h4>
             </article>
             <article className="experience_details">
-              <FaReact classname="experience_details-icon" />
+              <FaReact className="experience_details-icon" />
               <h4>React</h4>
             </article>
-            <article className="experience_details">
-              <TbBrandNextjs classname="experience_details-icon" />
+            {/* <article className="experience_details">
+              <TbBrandNextjs className="experience_details-icon" />
               <h4>Next.js</h4>
             </article>
             <article className="experience_details">
-              <SiTypescript classname="experience_details-icon" />
+              <SiTypescript className="experience_details-icon" />
               <h4>Typescript</h4>
-            </article>
+            </article> */}
             <article className="experience_details">
-              <SiTailwindcss classname="experience_details-icon" />
+              <SiTailwindcss className="experience_details-icon" />
               <h4>Tailwind</h4>
             </article>
             <article className="experience_details">
-              <BsBootstrapFill classname="experience_details-icon" />
+              <BsBootstrapFill className="experience_details-icon" />
               <h4>Bootstrap</h4>
             </article>
             <article className="experience_details">
-              <FaSass classname="experience_details-icon" />
+              <FaSass className="experience_details-icon" />
               <h4>SASS</h4>
             </article>
           </div>
@@ -76,41 +76,41 @@ const Experience = () => {
 
         <div className="experience_backend">
           <h3>
-            <BsPatchCheckFill classname="experience_details-icon" /> Backend
+            <BsPatchCheckFill className="experience_details-icon" /> Backend
             Development & API Integration
           </h3>
           <div className="experience_content">
             <article className="experience_details">
-              <FaNodeJs classname="experience_details-icon" />
+              <FaNodeJs className="experience_details-icon" />
               <h4>Node.js</h4>
             </article>
             <article className="experience_details">
-              <SiExpress classname="experience_details-icon" />
+              <SiExpress className="experience_details-icon" />
               <h4>Express.js</h4>
             </article>
 
             <article className="experience_details">
-              <SiMongodb classname="experience_details-icon" />
+              <SiMongodb className="experience_details-icon" />
               <h4>MongoDB</h4>
             </article>
 
             <article className="experience_details">
-              <GrMysql classname="experience_details-icon" />
+              <GrMysql className="experience_details-icon" />
               <h4>MySQL</h4>
             </article>
 
             <article className="experience_details">
-              <SiPostman classname="experience_details-icon" />
+              <SiPostman className="experience_details-icon" />
               <h4>Postman</h4>
             </article>
 
             {/* <article className="experience_details">
-              <SiGraphql classname="experience_details-icon" />
+              <SiGraphql className="experience_details-icon" />
               <h4>GraphQL</h4>
             </article> */}
 
             <article className="experience_details">
-              <TbApi classname="experience_details-icon" />
+              <TbApi className="experience_details-icon" />
               <h4>RESTful APIs</h4>
             </article>
           </div>
@@ -118,36 +118,36 @@ const Experience = () => {
 
         <div className="experience_backend">
           <h3>
-            <BsPatchCheckFill classname="experience_details-icon" /> Tools
+            <BsPatchCheckFill className="experience_details-icon" /> Tools
           </h3>
           <div className="experience_content">
             <article className="experience_details">
-              <AiOutlineGithub classname="experience_details-icon" />
+              <AiOutlineGithub className="experience_details-icon" />
               <h4>Git/GitHub</h4>
             </article>
 
             <article className="experience_details">
-              <SiVisualstudiocode classname="experience_details-icon" />
+              <SiVisualstudiocode className="experience_details-icon" />
               <h4>VS Code</h4>
             </article>
 
             <article className="experience_details">
-              <SiRedux classname="experience_details-icon" />
+              <SiRedux className="experience_details-icon" />
               <h4>Redux Dev Tools</h4>
             </article>
 
             <article className="experience_details">
-              <AiOutlineThunderbolt classname="experience_details-icon" />
+              <AiOutlineThunderbolt className="experience_details-icon" />
               <h4>Thunder Client</h4>
             </article>
 
             {/*<article className="experience_details">
-              <FaDocker classname="experience_details-icon" />
+              <FaDocker className="experience_details-icon" />
               <h4>Docker</h4>
             </article>
 
             <article className="experience_details">
-              <SiKubernetes classname="experience_details-icon" />
+              <SiKubernetes className="experience_details-icon" />
               <h4>Kubernetes</h4>
             </article>*/}
           </div>

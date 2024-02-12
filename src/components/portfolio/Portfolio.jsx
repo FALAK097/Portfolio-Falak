@@ -8,6 +8,7 @@ import IMG5 from '../../assets/wildheart.png';
 import IMG6 from '../../assets/Nike.PNG';
 import IMG7 from '../../assets/airbnb.png';
 import IMG8 from '../../assets/blog.png';
+import IMG9 from '../../assets/codetoimage.PNG';
 const data = [
   {
     id: 1,
@@ -49,6 +50,16 @@ const data = [
   },
   {
     id: 5,
+    image: IMG9,
+    title: 'Code To Image',
+    category: 'Web App',
+    content:
+      'This project is a code to image converter built using Next.js and various dependencies to provide features such as changing language color of code, theme selector, padding adjustment, and exporting PNG images.',
+    github: 'https://github.com/FALAK097/codetoimg',
+    demo: 'https://codetoimg-seven.vercel.app/',
+  },
+  {
+    id: 6,
     image: IMG6,
     title: 'Nike Landing Page',
     category: 'Web Design',
@@ -58,7 +69,7 @@ const data = [
     demo: 'https://nike-falak097.vercel.app/',
   },
   {
-    id: 6,
+    id: 7,
     image: IMG5,
     title: 'Wild Heart',
     category: 'Web Design',
@@ -68,7 +79,7 @@ const data = [
     demo: 'https://falak097.github.io/WildHeart/',
   },
   {
-    id: 7,
+    id: 8,
     image: IMG2,
     title: 'Education Website',
     category: 'Web Design',
@@ -76,7 +87,7 @@ const data = [
       'Presenting a responsive multipage website for an educational institute, showcasing courses and built using HTML, SCSS, and JavaScript. Experience seamless navigation and explore the diverse educational opportunities with ease.',
     github: 'https://github.com/FALAK097/Educationwebsite',
     demo: 'https://falak097.github.io/Educationwebsite/',
-  },
+  },
 ];
 
 const Portfolio = () => {
