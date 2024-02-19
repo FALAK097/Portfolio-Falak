@@ -9,6 +9,8 @@ import IMG6 from '../../assets/Nike.PNG';
 import IMG7 from '../../assets/airbnb.png';
 import IMG8 from '../../assets/blog.png';
 import IMG9 from '../../assets/codetoimage.PNG';
+import IMG10 from '../../assets/github.png';
+
 const data = [
   {
     id: 1,
@@ -19,6 +21,16 @@ const data = [
       'Developed a Spotify Clone, a full-stack music streaming application, using Next.js, React, Tailwind CSS, Supabase, PostgreSQL, and Stripe. The project includes features such as user authentication, song playback, favorites, playlists, and integration with Stripe for premium subscriptions, providing users with a Spotify-like experience.',
     github: 'https://github.com/FALAK097/spotify_clone',
     demo: 'https://spotify-clone-falak097.vercel.app/',
+  },
+  {
+    id: 10,
+    image: IMG10,
+    title: 'GitHub Clone',
+    category: 'Web App',
+    content:
+      'Introducing a GitHub-inspired platform, employing the MERN stack, Tailwind CSS, and Passport.js. Features include GitHub authentication via Passport.js, user profile and repository fetching, user search, and profile liking. Additionally, explore trending repositories by language. Experience seamless collaboration and exploration with robust error handling and intuitive design.',
+    github: 'https://github.com/FALAK097/mern-github',
+    demo: 'https://mern-github.onrender.com/',
   },
   {
     id: 2,
