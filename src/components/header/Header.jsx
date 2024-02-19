@@ -1,7 +1,7 @@
 import './Header.css';
 import CTA from './CTA';
 
-import Profile from '../../assets/profile.jpeg';
+import Profile from '../../assets/profile.JPEG';
 import HeaderSocials from './HeaderSocials';
 
 import Typical from 'react-typical';

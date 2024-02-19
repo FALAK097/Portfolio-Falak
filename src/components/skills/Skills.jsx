@@ -99,11 +99,6 @@ const Experience = () => {
               <h4>MySQL</h4>
             </article>
 
-            <article className="experience_details">
-              <SiPostman className="experience_details-icon" />
-              <h4>Postman</h4>
-            </article>
-
             {/* <article className="experience_details">
               <SiGraphql className="experience_details-icon" />
               <h4>GraphQL</h4>
@@ -132,8 +127,8 @@ const Experience = () => {
             </article>
 
             <article className="experience_details">
-              <SiRedux className="experience_details-icon" />
-              <h4>Redux Dev Tools</h4>
+              <SiPostman className="experience_details-icon" />
+              <h4>Postman</h4>
             </article>
 
             <article className="experience_details">
