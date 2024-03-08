@@ -1,20 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Skills.css';
-import { BsPatchCheckFill, BsBootstrapFill } from 'react-icons/bs';
-import { ImHtmlFive } from 'react-icons/im';
-import { IoLogoCss3 } from 'react-icons/io';
-import { GrMysql } from 'react-icons/gr';
-import { AiOutlineGithub, AiOutlineThunderbolt } from 'react-icons/ai';
+import { BsPatchCheckFill } from 'react-icons/bs';
 import { TbApi } from 'react-icons/tb';
-import { FaSass, FaNodeJs, FaReact } from 'react-icons/fa';
-import {
-  SiJavascript,
-  SiTailwindcss,
-  SiExpress,
-  SiMongodb,
-  SiVisualstudiocode,
-  SiPostman,
-} from 'react-icons/si';
 
 const Skills = () => {
   const [animateSkills, setAnimateSkills] = useState(false);
@@ -60,42 +47,42 @@ const Skills = () => {
           <div className="experience_content">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
-              alt="react"
+              alt="html"
               width="70%"
               height="100%"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
-              alt="react"
+              alt="css"
               width="70%"
               height="100%"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-              alt="react"
+              alt="sass"
               width="70%"
               height="100%"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-              alt="react"
+              alt="tailwindcss"
               width="70%"
               height="100%"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg"
-              alt="react"
+              alt="bootstrap"
               width="70%"
               height="100%"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
-              alt="react"
+              alt="javascript"
               width="70%"
               height="100%"
             />
@@ -119,26 +106,26 @@ const Skills = () => {
           <div className="experience_content">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"
-              alt="react"
+              alt="nodejs"
               width="70%"
               height="100%"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
-              alt="react"
+              alt="express"
               width="70%"
               height="100%"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg"
-              alt="react"
+              alt="mongodb"
               width="70%"
               height="100%"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
-              alt="react"
+              alt="mysql"
               width="70%"
               height="100%"
             />
@@ -156,21 +143,21 @@ const Skills = () => {
           <div className="experience_content">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-              alt="react"
+              alt="github"
               width="70%"
               height="100%"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg"
-              alt="react"
+              alt="vscode"
               width="70%"
               height="100%"
             />
 
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original-wordmark.svg"
-              alt="react"
+              alt="postman"
               width="70%"
               height="100%"
             />
