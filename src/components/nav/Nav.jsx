@@ -1,17 +1,34 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState, useEffect } from 'react';
 import './Nav.css';
 import { FaHome } from 'react-icons/fa';
 import { FaUserAlt } from 'react-icons/fa';
 import { BiBook } from 'react-icons/bi';
 import { AiOutlineProfile } from 'react-icons/ai';
 import { BiMessageSquareDetail } from 'react-icons/bi';
-import { useState } from 'react';
 
 const Nav = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 100);
+      setPrevScrollPos(() => currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
   const [activeNav, setActiveNav] = useState('#');
 
   return (
-    <nav>
+    <nav className={visible ? 'visible' : 'hidden'}>
       <a
         href="#"
         onClick={() => setActiveNav('#')}

@@ -1,54 +1,59 @@
 /* Default styles for navbar */
 nav {
-    background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
-  }
-  
-  nav a {
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
-    position: relative;
-  }
-  
-  nav .nav-tooltip {
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.8rem;
-    white-space: nowrap;
-    padding: 0.4rem 0.8rem;
-    background-color: var(--color-light);
-    color: var(--color-bg);
-    border-radius: 0.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  nav a:hover .nav-tooltip {
-    opacity: 1;
-  }
-  
-  nav a.active {
-    background-color: var(--color-primary);
-    /* Customize the background color for active link */
-  }
-  
-  nav a.active svg {
-    fill: var(--color-bg);
-    /* Customize the icon color for active link */
-  }
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  transition: bottom 0.3s ease; /* Add transition for smooth movement */
+}
+
+nav.hidden {
+  bottom: -6rem; /* Move the navbar below the viewport */
+}
+
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+  position: relative;
+}
+
+nav .nav-tooltip {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--color-light);
+  color: var(--color-bg);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+nav a:hover .nav-tooltip {
+  opacity: 1;
+}
+
+nav a.active {
+  background-color: var(--color-primary);
+  /* Customize the background color for active link */
+}
+
+nav a.active svg {
+  fill: var(--color-bg);
+  /* Customize the icon color for active link */
+}

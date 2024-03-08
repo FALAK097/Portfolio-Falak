@@ -49,7 +49,7 @@ const Footer = () => {
 
       <div className="footer_copyright">
         <h4>
-          Made with 💝 By &copy;{' '}
+          Made with ❤ By{' '}
           <a href="/" rel="noopener noreferrer">
             Falak Gala{' '}
           </a>{' '}
