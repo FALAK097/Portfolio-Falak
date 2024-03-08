@@ -37,7 +37,7 @@ const Nav = () => {
         <span className="nav-icon">
           <BiBook />
           {activeNav === '#experience' && (
-            <span className="nav-tooltip">Experience</span>
+            <span className="nav-tooltip">Skills</span>
           )}
         </span>
       </a>

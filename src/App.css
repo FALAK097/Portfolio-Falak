@@ -23,11 +23,11 @@
   background-color: transparent;
 }
 
-.light-theme .about_card h5 {
-  color: var(--color-light);
+.light-theme .about_card {
+  background: var(--color-primary-variant);
 }
 
-.light-theme .about_icon {
+.light-theme .about_card h5 {
   color: var(--color-light);
 }
 
@@ -44,8 +44,16 @@
   color: #04c3ff;
 }
 
+.light-theme .portfolio__item {
+  color: var(--color-bg-variant);
+}
+
+.light-theme .portfolio__item:hover {
+  color: var(--color-primary-variant);
+}
+
 .light-theme .portfolio__item.active-work {
-  color: var(--color-light);
+  background: var(--color-primary-variant);
 }
 
 .light-theme .portfolio-content {
@@ -60,25 +68,24 @@
   color: var(--color-light);
 }
 
+.light-theme .experience_container > div {
+  background: var(--color-primary-variant);
+}
+
 .light-theme .experience_container > div h3 {
   color: var(--color-light);
 }
 
 .light-theme .contact_option a {
-  color: var(--color-primary);
+  color: var(--color-light);
 }
 
 .light-theme .contact_option h4 h5 {
-  color: var(--color-primary);
-}
-
-.light-theme .contact_option h5 {
-  color: var(--color-bg-variant);
+  color: var(--color-light);
 }
 
 .light-theme .contact_option {
-  color: var(--color-primary);
-  background-color: var(--color-light);
+  background-color: var(--color-primary-variant);
 }
 
 .light-theme .btn-primary:hover {

@@ -2,6 +2,27 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.experience_container.animate {
+  opacity: 1;
+}
+
+.experience_frontend,
+.experience_backend:nth-child(2),
+.experience_backend:nth-child(3) {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 2s ease-in-out, transform 2s ease;
+}
+
+.experience_container.animate .experience_frontend,
+.experience_container.animate .experience_backend:nth-child(2),
+.experience_container.animate .experience_backend:nth-child(3) {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .experience_container > div {

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import './Skills.css';
 import { BsPatchCheckFill, BsBootstrapFill } from 'react-icons/bs';
 import { ImHtmlFive } from 'react-icons/im';
@@ -15,12 +16,41 @@ import {
   SiPostman,
 } from 'react-icons/si';
 
-const Experience = () => {
+const Skills = () => {
+  const [animateSkills, setAnimateSkills] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const skillsSection = document.getElementById('experience');
+      if (skillsSection) {
+        const skillsSectionTop = skillsSection.offsetTop;
+        const skillsSectionHeight = skillsSection.offsetHeight;
+        const windowScroll = window.scrollY;
+
+        if (
+          windowScroll >
+          skillsSectionTop - window.innerHeight + skillsSectionHeight / 2
+        ) {
+          setAnimateSkills(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section id="experience">
       <h5>My Technical Knowledge</h5>
       <h2>Skills</h2>
-      <div className="container experience_container">
+      <div
+        className={`container experience_container ${
+          animateSkills ? 'animate' : ''
+        }`}>
         <div className="experience_frontend">
           <h3>
             <BsPatchCheckFill className="experience_details-icon" /> Frontend
@@ -28,34 +58,54 @@ const Experience = () => {
           </h3>
 
           <div className="experience_content">
-            <article className="experience_details">
-              <ImHtmlFive className="experience_details-icon" />
-              <h4>HTML</h4>
-            </article>
-            <article className="experience_details">
-              <IoLogoCss3 className="experience_details-icon" />
-              <h4>CSS</h4>
-            </article>
-            <article className="experience_details">
-              <SiJavascript className="experience_details-icon" />
-              <h4>JavaScript</h4>
-            </article>
-            <article className="experience_details">
-              <FaReact className="experience_details-icon" />
-              <h4>React</h4>
-            </article>
-            <article className="experience_details">
-              <SiTailwindcss className="experience_details-icon" />
-              <h4>Tailwind</h4>
-            </article>
-            <article className="experience_details">
-              <BsBootstrapFill className="experience_details-icon" />
-              <h4>Bootstrap</h4>
-            </article>
-            <article className="experience_details">
-              <FaSass className="experience_details-icon" />
-              <h4>SASS</h4>
-            </article>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
           </div>
         </div>
 
@@ -67,25 +117,34 @@ const Experience = () => {
             Development & API Integration
           </h3>
           <div className="experience_content">
-            <article className="experience_details">
-              <FaNodeJs className="experience_details-icon" />
-              <h4>Node.js</h4>
-            </article>
-            <article className="experience_details">
-              <SiExpress className="experience_details-icon" />
-              <h4>Express.js</h4>
-            </article>
-            <article className="experience_details">
-              <SiMongodb className="experience_details-icon" />
-              <h4>MongoDB</h4>
-            </article>
-            <article className="experience_details">
-              <GrMysql className="experience_details-icon" />
-              <h4>MySQL</h4>
-            </article>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
             <article className="experience_details">
               <TbApi className="experience_details-icon" />
-              <h4>RESTful APIs</h4>
+              <h4>APIs</h4>
             </article>
           </div>
         </div>
@@ -95,22 +154,26 @@ const Experience = () => {
             <BsPatchCheckFill className="experience_details-icon" /> Tools
           </h3>
           <div className="experience_content">
-            <article className="experience_details">
-              <AiOutlineGithub className="experience_details-icon" />
-              <h4>Git/GitHub</h4>
-            </article>
-            <article className="experience_details">
-              <SiVisualstudiocode className="experience_details-icon" />
-              <h4>VS Code</h4>
-            </article>
-            <article className="experience_details">
-              <SiPostman className="experience_details-icon" />
-              <h4>Postman</h4>
-            </article>
-            <article className="experience_details">
-              <AiOutlineThunderbolt className="experience_details-icon" />
-              <h4>Thunder Client</h4>
-            </article>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original-wordmark.svg"
+              alt="react"
+              width="70%"
+              height="100%"
+            />
           </div>
         </div>
       </div>
@@ -118,4 +181,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Skills;
