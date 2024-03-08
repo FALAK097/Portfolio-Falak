@@ -1,6 +1,3 @@
-import React from 'react';
-// import CV from '../../assets/Falak Gala Resume.pdf'
-
 const CTA = () => {
   return (
     <div className="cta">

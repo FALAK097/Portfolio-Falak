@@ -1,10 +1,11 @@
+import Typical from 'react-typical';
+
 import './Header.css';
 import CTA from './CTA';
-
-import Profile from '../../assets/profile.png';
 import HeaderSocials from './HeaderSocials';
 
-import Typical from 'react-typical';
+import Profile from '../../assets/profile.png';
+
 const Header = () => {
   return (
     <header>

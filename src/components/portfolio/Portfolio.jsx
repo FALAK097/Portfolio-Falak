@@ -3,7 +3,6 @@ import './Portfolio.css';
 import IMG1 from '../../assets/foodrecipe.png';
 import IMG2 from '../../assets/edu1.png';
 import IMG3 from '../../assets/spotify.PNG';
-import IMG4 from '../../assets/edu2.png';
 import IMG5 from '../../assets/wildheart.png';
 import IMG6 from '../../assets/Nike.PNG';
 import IMG7 from '../../assets/airbnb.png';
