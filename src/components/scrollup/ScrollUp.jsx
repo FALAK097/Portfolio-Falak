@@ -11,8 +11,8 @@ const ScrollUp = () => {
   });
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <a href="#" className="scrollup">
-      <BiUpArrowAlt className="scrollup_icon" />
+    <a href="#" className="scrollup" aria-label="Go up">
+      <BiUpArrowAlt className="scrollup_icon" aria-label="Icon of go up" />
     </a>
   );
 };

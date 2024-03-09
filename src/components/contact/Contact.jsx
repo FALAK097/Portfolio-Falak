@@ -46,7 +46,8 @@ const Contact = () => {
             <a
               href="mailto:falakgala09@gmail.com"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+              aria-label="Email link">
               Email Me
             </a>
           </article>
@@ -57,7 +58,8 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/falak-gala/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+              aria-label="LinkedIn profile link">
               Connect with Me
             </a>
           </article>

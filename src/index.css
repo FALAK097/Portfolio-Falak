@@ -139,7 +139,8 @@ html {
   }
 }
 body {
-  background: var(--color-bg);
+  background: url('./assets/bg-texture.png');
+  background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
   margin: 0;

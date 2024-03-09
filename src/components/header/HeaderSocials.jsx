@@ -7,16 +7,22 @@ const HeaderSocials = () => {
       <a
         href="https://www.linkedin.com/in/falak-gala/"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+        aria-label="LinkedIn profile link">
         <BsLinkedin />
       </a>
-      <a href="https://github.com/FALAK097" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/FALAK097"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub profile link">
         <FaGithub />
       </a>
       <a
         href="https://twitter.com/FalakGala097"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+        aria-label="Twitter profile link">
         <BsTwitter />
       </a>
     </div>
