@@ -19,6 +19,10 @@ nav.hidden {
   bottom: -6rem; /* Move the navbar below the viewport */
 }
 
+.nav-icon:hover .nav-tooltip {
+  opacity: 1;
+}
+
 nav a {
   background: transparent;
   padding: 0.9rem;

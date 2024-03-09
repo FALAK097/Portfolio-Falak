@@ -35,7 +35,7 @@ const Nav = () => {
         className={activeNav === '#' ? 'active' : ''}>
         <span className="nav-icon">
           <FaHome />
-          {activeNav === '#' && <span className="nav-tooltip">Home</span>}
+          <span className="nav-tooltip">Home</span>
         </span>
       </a>
       <a
@@ -44,7 +44,7 @@ const Nav = () => {
         className={activeNav === '#about' ? 'active' : ''}>
         <span className="nav-icon">
           <FaUserAlt />
-          {activeNav === '#about' && <span className="nav-tooltip">About</span>}
+          <span className="nav-tooltip">About</span>
         </span>
       </a>
       <a
@@ -53,9 +53,7 @@ const Nav = () => {
         className={activeNav === '#experience' ? 'active' : ''}>
         <span className="nav-icon">
           <BiBook />
-          {activeNav === '#experience' && (
-            <span className="nav-tooltip">Skills</span>
-          )}
+          <span className="nav-tooltip">Skills</span>
         </span>
       </a>
       <a
@@ -64,9 +62,7 @@ const Nav = () => {
         className={activeNav === '#portfolio' ? 'active' : ''}>
         <span className="nav-icon">
           <AiOutlineProfile />
-          {activeNav === '#portfolio' && (
-            <span className="nav-tooltip">Portfolio</span>
-          )}
+          <span className="nav-tooltip">Portfolio</span>
         </span>
       </a>
       <a
@@ -75,9 +71,7 @@ const Nav = () => {
         className={activeNav === '#contact' ? 'active' : ''}>
         <span className="nav-icon">
           <BiMessageSquareDetail />
-          {activeNav === '#contact' && (
-            <span className="nav-tooltip">Contact</span>
-          )}
+          <span className="nav-tooltip">Contact</span>
         </span>
       </a>
     </nav>
