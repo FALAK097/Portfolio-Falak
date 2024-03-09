@@ -8,7 +8,7 @@ import Profile from '../../assets/profile.png';
 
 const Header = () => {
   return (
-    <header>
+    <header className="banner02">
       <div className="container header_container">
         <h3>Hi There I'm</h3>
         <h1>Falak Gala</h1>

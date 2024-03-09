@@ -4,13 +4,18 @@ import { ReactComponent as SunIcon } from '../../assets/sun.svg';
 import { ReactComponent as MoonIcon } from '../../assets/moon.svg';
 
 const Darkmode = () => {
-  const [theme, setTheme] = useState('dark-theme');
+  // Read theme preference from local storage or set default to 'dark-theme'
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || 'dark-theme'
+  );
   const [isToggleHidden, setIsToggleHidden] = useState(false);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) =>
-      prevTheme === 'dark-theme' ? 'light-theme' : 'dark-theme'
-    );
+    // Toggle between light and dark themes
+    const newTheme = theme === 'dark-theme' ? 'light-theme' : 'dark-theme';
+    setTheme(newTheme);
+    // Update theme preference in local storage
+    localStorage.setItem('theme', newTheme);
   };
 
   useEffect(() => {

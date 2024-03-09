@@ -232,6 +232,46 @@ img {
   object-fit: cover;
 }
 
+.banner {
+  background: url('./assets/banner.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.banner02 {
+  background: url('./assets/banner02.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.banner03 {
+  background: url('./assets/banner03.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.banner04 {
+  background: url('./assets/banner04.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
 /* Media Query (Medium Devices) */
 @media screen and (max-width: 1024px) {
   .container {

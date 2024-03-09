@@ -6,7 +6,7 @@ import { BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="banner">
       <a href="#" className="footer_logo">
         Falak Gala
       </a>

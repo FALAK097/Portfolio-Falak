@@ -12,13 +12,13 @@
   margin-bottom: 2rem;
 }
 
-/* Active Filter Highlight */
 .portfolio__item.active-work {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-primary-variant);
+  color: var(--color-primary);
 }
 
 .portfolio__item {
+  color: var(--color-primary);
   cursor: pointer;
   padding: 0.25rem 0.75rem;
   font-weight: 500;
@@ -26,7 +26,7 @@
 }
 
 .portfolio__item:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-variant);
 }
 
 .portfolio_item {
