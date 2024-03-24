@@ -7,8 +7,19 @@ import IMG7 from '../../assets/airbnb.png';
 import IMG8 from '../../assets/blog.png';
 import IMG9 from '../../assets/codetoimage.PNG';
 import IMG10 from '../../assets/github.png';
+import IMG11 from '../../assets/devfinder.PNG';
 
 const data = [
+  {
+    id: 11,
+    image: IMG11,
+    title: 'Dev Finder',
+    category: 'Web App',
+    content:
+      'Dev Finder is an application built using Next.js, Drizzle, PostgreSQL, Docker, GetStream, Tailwind, Shadcn UI which allows developers from anywhere around the world to connect in an online room with other programmers and code together through screen sharing and solve problems together. It provides language specific room tags, so developers can join in their preferred language rooms and help other developers around the world.',
+    github: 'https://github.com/FALAK097/devfinder',
+    demo: 'https://devfinder-production.up.railway.app/',
+  },
   {
     id: 1,
     image: IMG3,
