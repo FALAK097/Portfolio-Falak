@@ -8,4 +8,7 @@ export const projectsNav = [
   {
     name: 'Web App',
   },
+  {
+    name: 'Mobile App',
+  },
 ];

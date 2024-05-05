@@ -8,6 +8,8 @@ import IMG8 from '../../assets/blog.png';
 import IMG9 from '../../assets/codetoimage.PNG';
 import IMG10 from '../../assets/github.png';
 import IMG11 from '../../assets/devfinder.PNG';
+import IMG12 from '../../assets/Fithub.PNG';
+import IMG13 from '../../assets/BeautyStore.PNG';
 
 const data = [
   {
@@ -29,6 +31,27 @@ const data = [
       'Developed a Spotify Clone, a full-stack music streaming application, using Next.js, React, Tailwind CSS, Supabase, PostgreSQL, and Stripe. The project includes features such as user authentication, song playback, favorites, playlists, and integration with Stripe for premium subscriptions, providing users with a Spotify-like experience.',
     github: 'https://github.com/FALAK097/spotify_clone',
     demo: 'https://spotify-clone-falak097.vercel.app/',
+  },
+  {
+    id: 9,
+    image: IMG12,
+    title: 'FitHub',
+    category: 'Mobile App',
+    content:
+      'FitHub is a fitness application built using React Native, Expo, Firebase, and NativeWind(Tailwind CSS). The app provides users with a platform to learn and practice various exercises, get personalzied diet plans, and track their daily steps. Users can also detect different gym machines using the camera and get information about the machine and how to use it. The app also provides a feature to chat with an AI Chatbot that can provide information regarding diet and exercises.',
+    github: 'https://github.com/FAKA097/FitnessApp',
+    demo: 'https://fithub-showcase.vercel.app/',
+  },
+  {
+    id: 12,
+    image: IMG13,
+    title: 'Beauty Store App',
+    category: 'Mobile App',
+    content:
+      'Beauty Store App is a mobile application built using React Native, Expo, Firebase, Firestore Database, Firebase Auth, Firestore Storage. This app is an inventory management app for a beauty store where new category and products could be added, edited, deleted and viewed. The app also provides features like user authentication, dashboard to see number of users, categories, products, and products low in inventory and is displayed using Victory Native Charts.',
+    github: 'https://github.com/FALAK097/beautyStore',
+    demo: 'https://drive.google.com/file/d/1yoT9vZts26OJTCSCH6mbd0KNIpYlkxP5/view',
+    height: '500px',
   },
   {
     id: 10,
