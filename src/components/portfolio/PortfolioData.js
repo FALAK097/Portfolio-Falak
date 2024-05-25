@@ -20,7 +20,7 @@ const data = [
     content:
       'Dev Finder is an application built using Next.js, Drizzle, PostgreSQL, Docker, GetStream, Tailwind, Shadcn UI which allows developers from anywhere around the world to connect in an online room with other programmers and code together through screen sharing and solve problems together. It provides language specific room tags, so developers can join in their preferred language rooms and help other developers around the world.',
     github: 'https://github.com/FALAK097/devfinder',
-    demo: 'https://devfinder-production.up.railway.app/',
+    demo: 'https://drive.google.com/file/d/1LHWTFmuTLURbjVj3vrDF-UbVRaq-PxO8/view',
   },
   {
     id: 1,

@@ -2,7 +2,7 @@ const CTA = () => {
   return (
     <div className="cta">
       <a
-        href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:186a790c-f8f9-41b0-818a-3b6dcbcfc7b5"
+        href="https://drive.google.com/file/d/1vxnk5xKEbTnp5Jige66st_ZLzMjunqQw/view"
         className="btn"
         target="_blank"
         rel="noreferrer">
