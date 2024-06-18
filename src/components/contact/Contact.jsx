@@ -8,9 +8,34 @@ import emailjs from 'emailjs-com';
 const Contact = () => {
   const form = useRef();
   const [done, setDone] = useState(false);
+  const [error, setError] = useState(false); // Add error state
+
+  const checkRateLimit = () => {
+    const submissions = JSON.parse(localStorage.getItem('submissions')) || [];
+    const now = Date.now();
+    const timeframe = 60000; // 1 minute in milliseconds
+    const maxSubmissions = 2;
+
+    const recentSubmissions = submissions.filter(
+      (submission) => now - submission < timeframe
+    );
+
+    if (recentSubmissions.length >= maxSubmissions) {
+      return false;
+    }
+
+    recentSubmissions.push(now);
+    localStorage.setItem('submissions', JSON.stringify(recentSubmissions));
+    return true;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!checkRateLimit()) {
+      alert('You have reached the submission limit. Please try again later.');
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -23,14 +48,17 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
+          setError(false); // Reset error state
         },
         (error) => {
           console.log(error.text);
+          setError(true); // Set error state on failure
         }
       );
 
     e.target.reset();
   };
+
   return (
     <section id="contact" className="banner02">
       <h5>Get In Touch</h5>
@@ -77,7 +105,12 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-          {done && 'Thank You...'}
+          {done && <span>Thank You...</span>}
+          {error && (
+            <span>
+              Service is currently unavailable. You can mail me directly instead
+            </span>
+          )}
         </form>
       </div>
     </section>

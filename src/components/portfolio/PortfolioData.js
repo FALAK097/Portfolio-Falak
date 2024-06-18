@@ -39,7 +39,7 @@ const data = [
     category: 'Mobile App',
     content:
       'FitHub is a fitness application built using React Native, Expo, Firebase, and NativeWind(Tailwind CSS). The app provides users with a platform to learn and practice various exercises, get personalzied diet plans, and track their daily steps. Users can also detect different gym machines using the camera and get information about the machine and how to use it. The app also provides a feature to chat with an AI Chatbot that can provide information regarding diet and exercises.',
-    github: 'https://github.com/FAKA097/FitnessApp',
+    github: 'https://github.com/FALAK097/FitnessApp',
     demo: 'https://fithub-showcase.vercel.app/',
   },
   {
