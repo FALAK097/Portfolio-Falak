@@ -56,7 +56,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification_calendar">
                   <BsFillCalendarFill className="qualification_icon" />
-                  January 2022 - Present
+                  January 2022 - May 2024
                 </div>
               </div>
 
