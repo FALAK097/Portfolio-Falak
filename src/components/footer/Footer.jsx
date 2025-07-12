@@ -86,7 +86,7 @@ const Footer = () => {
         <h4>
           Made with ❤ By{' '}
           <a
-            href="/"
+            href="https://falakgala.dev"
             rel="noopener noreferrer"
             aria-label="Visit Falak Gala's website">
             Falak Gala{' '}
